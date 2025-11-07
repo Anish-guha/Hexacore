@@ -1,0 +1,150 @@
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #222;
+}
+
+.dummy-map {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.normal-btn,
+.sos-btn,
+.cancel-btn {
+  padding: 15px 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.normal-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.normal-btn:hover {
+  background-color: #0056b3;
+}
+
+.sos-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.sos-btn:hover {
+  background-color: #a71d2a;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #565e64;
+}
+
+.confirmation-screen,
+.sos-countdown-screen,
+.sos-alert-screen {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 25px;
+  margin-top: 10px;
+}
+
+.chatbot {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.messages {
+  height: 180px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.user-msg {
+  background-color: #cce5ff;
+  padding: 7px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.bot-msg {
+  background-color: #e2e3e5;
+  padding: 7px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-area input {
+  flex-grow: 1;
+  padding: 7px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input-area button {
+  padding: 7px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-input-area button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+  .dummy-map {
+    height: 180px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .normal-btn,
+  .sos-btn {
+    width: 100%;
+  }
+}
